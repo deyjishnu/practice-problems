@@ -1,0 +1,45 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    The command 'diff' can be used to compare two files and find all the lines
+    that are different between them. So, we can use this command to compare two
+    versions of the same file to see what changes have been made. If any bug was
+    introduced, it can also be seen along with the changes.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    We can revert back to any older versions of a file because a bug is introduced
+    or just because we liked the old version more. This makes us efficient programmers.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros: You can make a commit for each logical change, when you want.
+    Thus, there is no chance of too many unnecessary saves. Also, we can find
+    the commits easier, as each commit is done for each logical change.
+    Cons: We might forget to save for a long time, and then due to some unwelcome
+    problems, the changes made since last save, is not saved.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    The reason is sometimes we make changes to multiple files for a logical change,
+    especially in programming. To keep track of the multiple files that have been changed,
+    Git allow saving multiple files in one commit.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    To find all the commits that has been made in a repo, we use 'git log'.
+    To find the difference between two commits, we can use:
+    git diff <first commit id> <second commit id>
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    We can revert back to any commit made earlier.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I want to develop projects and collaborate with my friends.

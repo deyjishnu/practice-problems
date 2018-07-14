@@ -1,0 +1,28 @@
+body {
+    background: lightgray;
+    font-family: arial;
+}
+
+h1, h2 {
+    color: darkcyan;
+}
+
+a {
+    color: blue;
+}
+
+.secondary {
+    background: lightgray;
+    color: black;
+}
+
+p {
+    background: grey;
+    color: white;
+    padding: 10px
+}
+
+#nav {
+    background: rgb(0, 187, 190);
+    color: white;
+}

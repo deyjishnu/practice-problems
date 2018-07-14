@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<script>
+function validate()
+{
+	var str=document.form.fullname.value;
+    var str2=document.form.mailid.value;
+    var n=str2.length;
+    var i;
+    var flag=0;
+    for(i=0;i<n;i++)
+    {
+    	if(str2.charAt(i)=='@')
+        flag=1;
+    }
+	if(str.length<5 || str.length>10)
+    alert("Name must be of 5-10 characters");
+    if(flag==0)
+    alert("No '@' in Mail ID");
+    if(document.form.mailid.value=="")
+    alert("Mail ID is blank");
+    else if(document.form.cadd.value=="")
+	alert("Address cannot be left Blank");
+	else if(document.form.sameasabove.value=true)
+	document.form.padd.disabled="true";
+	else
+	alert("Hip-Hip-Hurray!!!!");
+}
+
+function address()
+{
+	document.form.padd.disabled="true";
+}
+</script>
+</head>
+
+<body>
+<form name="form" onsubmit="validate()">
+
+<b>Name:</b><input type="text" name="fullname" id="name">
+<i>(Max 10 characters)</i>
+<br> <br>
+
+<b>Mail ID:</b> <input type="text" name="mailid">
+<br> <br>
+
+<b>Qualification</b>
+<select>
+<option value="btech">B.Tech
+<option value="mtech">M.Tech
+</select>
+<br><br>
+
+<b>Gender:</b> <br>
+<input type="radio" name="gender" value="male" checked>MALE<br>
+<input type="radio" name="gender" value="female">FEMALE<br>
+<br><br>
+
+<b>Documents</b><br>
+<input type="checkbox" value="qualification">VOTER CARD<br>
+<input type="checkbox" value="qualification">ADHAAR CARD<br>
+<input type="checkbox" value="qualification">PASSPORT<br>
+<input type="checkbox" value="qualification">PAN CARD<br>
+<br>
+
+<b>Correspondence Address</b><br>
+<textarea rows="5" cols="40" name="cadd">
+</textarea><br><br>
+
+<b>Permanent Address</b>
+<input type="checkbox" value="sameasabove" name="checkbox" onchange="address()"><i>Same as above</i>
+<br>
+
+<textarea rows="5" cols="30" name="padd">
+</textarea>
+
+<br>
+<input type="submit" value="SUBMIT">
+</form>
+</body>
+</html>

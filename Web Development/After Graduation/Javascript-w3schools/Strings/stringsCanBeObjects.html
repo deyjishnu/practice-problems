@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+var x = "John";              // x is a string
+var y = new String("John");  // y is an object
+
+// Don't create strings as objects. It slows down execution speed.
+// The new keyword complicates the code. This can produce some unexpected results.
+
+document.getElementById("demo").innerHTML =
+typeof x + "<br>" + typeof y;
+</script>
+
+</body>
+</html>

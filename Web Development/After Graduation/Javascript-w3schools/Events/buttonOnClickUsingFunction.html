@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- For more details, go to https://www.w3schools.com/js/js_events.asp -->
+<html>
+    <body>
+
+    <p>Click the button to display the date.</p>
+
+    <button onclick="displayDate('demo')">The time is?</button>
+
+    <script>
+        function displayDate(id) {
+            document.getElementById(id).innerHTML = Date();
+        }
+    </script>
+
+    <p id="demo"></p>
+
+    </body>
+</html> 

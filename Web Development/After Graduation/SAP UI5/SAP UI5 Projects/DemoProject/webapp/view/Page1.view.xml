@@ -1,0 +1,13 @@
+<mvc:View controllerName="DemoProjectDemoProject.controller.Page1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title = "My First SAP UI5 App">
+				<content>
+					<Input placeholder = "Hello, this is Jishnu" />
+					<Button text = "Click here" press = "onClick" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

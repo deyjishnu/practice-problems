@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Registration Page</title>
+<script>
+	function validate()
+	{
+		if(document.form.name.value=="")
+			alert("Name cannot be left Blank");
+		else if(document.form.mail.value=="")
+			alert("E-Mail cannot be left Blank");
+		else if(document.form.cadd.value=="")
+			alert("Address cannot be left Blank");
+		else if(document.form.sameasabove.value=true)
+			document.form.padd.disabled="true";
+		else
+			alert("Hip-Hip-Hurray!!!!");
+	}
+	function address()
+	{
+			document.form.padd.disabled="true";
+	}
+</script>
+</head>
+<body>
+<form name="form" onsubmit="validate()">
+<h3>
+
+NAME <input type="text" name="name"/><br><br>
+
+MAIL ID <input type="text" name="mail"/><br><br>
+
+GENDER <input type= "radio" name="gender" value="male">Male
+<input type= "radio" name="gender" value="female">Female<br><br>
+QUALIFICATION: <select name = "qualification"><option value="btech">B.Tech</option>
+<option value="mtech">M.Tech</option></select><br><br>
+
+DOCUMENTS <input type="checkbox" name="doc" value="voter">VOTER CARD<br>
+                           <input type="checkbox" name="doc" value="adhar">ADHAR CARD<br>
+                           <input type="checkbox" name="doc" value="passport">PASSSPORT<br>
+                           <input type="checkbox" name="doc" value="pan">PAN CARD<br><br>
+
+CORRESPONDENCE ADDRESS: <br><textarea rows="5"cols="40"name="cadd"></textarea><br><br>
+
+PERMANENT ADDRESS: (<input type="checkbox" name="sameasabove" value="sameasabove" onchange="address()"> SAME AS ABOVE )
+<br><textarea rows="5"cols="40"name="padd"></textarea><br><br>
+                           <input type="submit" value="SUBMIT">
+</h3>
+</form>
+</body>
+</html>

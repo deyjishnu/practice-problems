@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>JavaScript typeof</h2>
+        <p>The typeof operator returns the type of a variable or an expression.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var a;      // Undefined variable
+            var x = true;   // Boolean variable
+            var y = 10;     // Number
+            var z = {name: "Jishnu", lastName: "Dey"};      //Object
+
+            document.getElementById("demo").innerHTML = 
+            typeof "" + "<br>" +
+            typeof "Jishnu" + "<br>" + 
+            typeof "Dey" + "<br>" +
+            typeof a + "<br>" +
+            typeof x + "<br>" +
+            typeof y + "<br>" +
+            typeof z + "<br>";
+        </script>
+    </body>
+</html>
