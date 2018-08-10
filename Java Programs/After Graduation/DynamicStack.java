@@ -1,10 +1,11 @@
 // Define a Character-type Dynamic stack (a stack which never gets full)
+
 class DynamicStack {
     private int tos;
     private int size;
     private char a[];
 
-    // Constructor to size of stack to 10 by default
+    // Constructor to set size of stack to 10 by default
     DynamicStack() {
         tos = -1;
         size = 10;
