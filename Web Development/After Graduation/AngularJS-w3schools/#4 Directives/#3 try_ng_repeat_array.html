@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+
+    <body ng-app>
+        <div ng-init="names=['Messi', 'Suarez', 'Neymar']">
+            <h2>Looping with ng-repeat:</h2>
+            <ul>
+                <li ng-repeat="x in names">
+                    {{x}}
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+
+<body ng-app="myApp">
+    <!-- Invoking a directive by using element name -->
+    <my-directive></my-directive>
+
+    <!-- Invoking a directive by using attribute -->
+    <div my-directive></div>
+
+    <script>
+        var app = angular.module("myApp", []);
+        app.directive("myDirective", function() {
+            return {
+                // restrict: 'A', // By adding a restrict property with the value "A", the directive can only be invoked by attributes
+                template: "<h2>Made by a directive!</h2>"
+            };
+        });
+    </script>
+</body>
+
+</html>
